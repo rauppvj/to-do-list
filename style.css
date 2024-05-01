@@ -1,0 +1,107 @@
+:root {
+    --color00: #1C3144;
+    --color01: #A5ABAF;
+    --color02: #222725;
+    --color03: #121113;
+    --color04: #2BC016;
+    --color05: #196D0D;
+    --color06: #D00000; 
+}
+
+body {
+    background-color: var(--color03);
+    font-family: 'Lato', sans-serif;
+    color: var(--color01);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.content-add-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+#btnNewTask,
+#input-new-task {
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    padding: 1rem;
+}
+
+#input-new-task {
+    width: 20rem;
+    border-radius: 1rem;
+}
+
+#btnNewTask {
+    background-color: var(--color02);
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#btnNewTask:hover {
+    background-color: var(--color01);
+}
+
+
+#to-do-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0;
+}
+
+
+
+#to-do-list li {
+    list-style-type: none; /* Muda o tipo de decoração da lista */
+    font-size: 1.4rem;
+    text-transform: capitalize; /* Deixa  a primeira letra de cada task em maiúsculo */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+#to-do-list li:hover {
+    background-color: var(--color02);
+    transition: .4s;
+    border-radius: 1rem 1.5rem 1.5rem 1rem;
+    padding-left: 1rem;
+}
+
+#btn-ok {
+    border: none;
+    background-color: var(--color04);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: .4rem .8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+
+}
+
+#btn-ok:hover {
+    background-color: var(--color05);
+}
+
